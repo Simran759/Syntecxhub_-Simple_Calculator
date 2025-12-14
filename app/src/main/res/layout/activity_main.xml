@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7FA"
+    android:padding="16dp">
+
+    <!-- ================= TOP DISPLAY ================= -->
+
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="40sp"
+        android:textColor="#777777"
+        android:gravity="end"
+        android:maxLines="4"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@id/tvResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="60sp"
+        android:maxLines="4"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="end"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/grid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+/>
+    <!-- ================= BUTTON GRID ================= -->
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="false"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Row 1 -->
+        <Button style="@style/CalcBtnSmall" android:text="AC"/>
+        <Button style="@style/CalcBtn" android:text="%"/>
+        <Button style="@style/CalcBtn" android:text="C"/>
+        <Button style="@style/CalcBtnOp" android:text="÷"/>
+
+        <!-- Row 2 -->
+        <Button style="@style/CalcBtn" android:text="7"/>
+        <Button style="@style/CalcBtn" android:text="8"/>
+        <Button style="@style/CalcBtn" android:text="9"/>
+        <Button style="@style/CalcBtnOp" android:text="×"/>
+
+        <!-- Row 3 -->
+        <Button style="@style/CalcBtn" android:text="4"/>
+        <Button style="@style/CalcBtn" android:text="5"/>
+        <Button style="@style/CalcBtn" android:text="6"/>
+        <Button style="@style/CalcBtnOp" android:text="−"/>
+
+        <!-- Row 4 -->
+        <Button style="@style/CalcBtn" android:text="1"/>
+        <Button style="@style/CalcBtn" android:text="2"/>
+        <Button style="@style/CalcBtn" android:text="3"/>
+        <Button style="@style/CalcBtnOp" android:text="+"/>
+
+        <!-- Row 5 -->
+        <Button style="@style/CalcBtn" android:text="0"/>
+        <Button style="@style/CalcBtn" android:text="."/>
+        <Button style="@style/CalcBtnEqual" android:text="="/>
+        <Button style="@style/CalcBtnSmalli" android:text="ANS"/>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

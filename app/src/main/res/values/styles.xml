@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Normal number button -->
+    <style name="CalcBtn">
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">68dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/circle_button</item>
+    </style>
+
+    <!-- Smaller top-row buttons -->
+    <style name="CalcBtnSmall" parent="CalcBtn">
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">68dp</item>
+        <item name="android:textSize">15sp</item>
+
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/circle_button</item>
+    </style>
+
+    <style name="CalcBtnSmalli" parent="CalcBtn">
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">68dp</item>
+        <item name="android:textSize">10sp</item>
+
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/circle_button</item>
+    </style>
+
+    <!-- Operator buttons -->
+    <style name="CalcBtnOp" parent="CalcBtn">
+        <item name="android:textColor">#FFD54F</item>
+    </style>
+
+    <!-- Equal button -->
+    <style name="CalcBtnEqual" parent="CalcBtn">
+        <item name="android:textColor">#00E676</item>
+    </style>
+
+</resources>
